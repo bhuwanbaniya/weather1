@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*where all the   function or updated elements(events) shows*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+    background: #222;
+    background-image: url('https://images.unsplash.com/photo-1521386201167-03ddabe2af97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    
+
+/*all the text like search and location*/
+}
+
+
+.card {
+    background: #000000d0;
+    color:whitesmoke;
+    padding: 2em;
+    border-radius: 40px;
+    width: 100vh;
+    max-width: 210px;
+    margin: 1em;
+    margin-left: 8px;
+
+ }
+
+.future-forecast{
+    background: #060303d0;
+    color:whitesmoke;
+    padding: 1em;
+    border-radius: 40px;
+    width: 100vh;
+    max-width: 150px;
+    margin: 1em;
+    margin-left: 8px;
+
+ }
+ 
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+    background: #7c7c7c7b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background-color: #7c7c7c7b;
+    color: white;
+    font-family: inherit;
+    font-size: 110%;
+    width:calc(100%-100px)
+}
+
+.data-card{
+    margin: 0.5em;
+    border-radius: 80%;
+    border: none;
+    height: 4.5em;
+    width: 4.5em;
+    outline: none;
+    background: #7c7c7c7b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+/*class styles a container */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color:white;
+    position: absolute;
+    top:0;
+    left:20px;
+}
+
+
+.footer{
+    position: fixed;
+    left:0 ;
+    bottom: 0;
+    width:100%;
+    color: white;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 45vh;
+    margin: 0px;
+    font-weight: bold; */
+
+}
